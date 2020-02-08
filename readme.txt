@@ -16,7 +16,7 @@ KOSMO7-fin Project
 4. 업무 분담
   - [김정호] - 모든 조에 들어가며 방향 제시 및 코딩, 디자인 관여, [게임]창던지기
   - 1조[유지상] - 메인, 회원, 상점, [게임]카드뒤집기(미정)
-  - 2조[최원준] - 
+  - 2조[최원준] - 채팅, 공지사항
   - 3조[박찬영, 유지상] - 랭킹
   - 4조[장세진, 천세문] - [게임]제목미정
 
@@ -28,12 +28,12 @@ KOSMO7-fin Project
   - 본인이 허락된 파일 외에는 담당자 허락을 구한 뒤 조장과 상의하여 만들것
 
 6. class, id 네이밍 방법
-  - class : 소문자로 작성, 두단어로 이루어질 경우 "-"(하이픈) 사용하여 나눔, 단 "common-example" 과 같이 "common-"은 사용하지 않는다.
+  - class : 소문자로 작성, 두단어로 이루어질 경우 "-"(하이픈) 사용하여 나눔
 	ex) member-id, title-goods, title-notice
   - id : camel case(카멜 표기법) 사용
 	ex) headerLogo, contentBox
 
-7. 예약 class, id
+7. 예약 class, id [사용금지]
   - class
 	* common-*
 	* header-*

@@ -1,0 +1,29 @@
+/* 기본 CSS를 작성합니다. (세로모드 모바일 디바이스)
+  기본으로 작성되는 CSS는 576px보다 작은 화면에서 작동 됩니다.
+  가로모드 모바일 디바이스 (가로 해상도가 576px 보다 큰 화면에 적용) */
+
+
+
+
+
+
+
+
+/* 가로 해상도가 576px 보다 큰 화면에 적용 */
+@media screen and (min-width: 576px) {
+      
+}
+
+/* 가로 해상도가 768px 보다 큰 화면에 적용 */
+@media screen and (min-width: 768px) {
+    
+}
+
+/* 가로 해상도가 992px 보다 큰 화면에 적용 */
+@media screen and (min-width: 992px) {
+
+}
+/* 가로 해상도가 1200px 보다 큰 화면에 적용 */
+@media screen and (min-width: 1225px) {
+    
+}

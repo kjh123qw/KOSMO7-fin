@@ -2,122 +2,61 @@
   기본으로 작성되는 CSS는 576px보다 작은 화면에서 작동 됩니다.
   가로모드 모바일 디바이스 (가로 해상도가 576px 보다 큰 화면에 적용) */
 
+body, html, #contentBox{
+  height: 100%;
+  overflow: hidden;
+}
+
+#contentBox{
+  display: inline;
+}
+
 #mainDiv{
-
-border: 1px solid black;
-width: 100%;
-height: 300px;
-position: relative;
-overflow: hidden;
-
+  width: 100%;
+  height: 100%;
 }
 
-#navDiv{
-
-    /* box-sizing: border-box; */
-    background-color: red;
-    height: 60px;
-    position: relative;
+#t1, #t2{
+  position: absolute;
+  left: 50%;
+  bottom: 30px;
+  text-shadow: 5px 5px 10px rgba(0,0,0,0.8);
+  transition: 0.5s;
+  cursor: pointer;
+  transform: translate(-50%);
 }
 
-#navOptionDiv{
+#t1:hover{
+  transform: translate(-80%);
+}
 
-    border: 1px solid black;
-    height: 100%;
-    width: 60px;
+#t1:hover > #t2{
+  transform: translate(100%);
+  visibility: visible;
+  opacity: 1;
+}
+
+#t2{
+  /* border: 1px solid red; */
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
     position: absolute;
-
-
+    right: 0; 
+    top: 2px; 
 }
 
-#navTitleDiv{
-    border: 1px solid black;
-    height: 100%;
-    position: absolute;
-    line-height: 60px;
-    font-size: 30px;
-
-    -ms-user-select: none; 
-    -moz-user-select: -moz-none;
-    -khtml-user-select: none;
-    -webkit-user-select: none;
-    user-select: none;
+#mainDiv{
+  position: absolute;
 }
 
-#navTitleDiv{
-
-    left: 30px;
-
+#mainDiv2{
+  top: 100%;
+  position: absolute;
+  width: 100px;
+  height: 100%;
+  background-color: red;
 }
-
-#navOptionDiv{
-
-    right: 30px;
-    text-align: center;
-
-}
-
-.fa-bars{
-    font-size: 60px;
-    color: yellow;
-}
-
-.fa-bars:hover{
-    cursor: pointer;
-}
-
-#toggleMenu{
-
-    width: 100px;
-    height: 100px;
-    background-color: violet;
-    position: absolute;
-    right: 0px;
-    bottom: 150px;
-
-}
-
-#selectDiv{
-
-width: 30%;
-
-}
-
-*[data-animation="ripple"] {
-    height: 100%;
-    width: 100%;
-    display: block;
-    outline: none;
-    padding: 20px;
-    color: #fff;
-    text-transform: uppercase;
-    background: linear-gradient(135deg, #e570e7 0%,#79f1fc 100%);
-    box-sizing: border-box;
-    text-align: center;
-    line-height: 14px;
-    font-family: roboto, helvetica;
-    font-weight: 200;
-    letter-spacing: 1px;
-    text-decoration: none;
-    box-shadow: 0 5px 3px rgba(0, 0, 0, 0.3);
-    cursor: pointer;
-  /*border-radius: 50px;*/
-    -webkit-tap-highlight-color: transparent;
-    border-radius: 5px;
-}
-
-*[data-animation="ripple"]:focus {
-    outline: none;
-}
-
-*[data-animation="ripple"]::selection {
-    background: transparent;
-    pointer-events: none;
-}
-
-
-
-
 
 
 

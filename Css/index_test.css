@@ -1,0 +1,303 @@
+/* 기본 CSS를 작성합니다. (세로모드 모바일 디바이스)
+  기본으로 작성되는 CSS는 576px보다 작은 화면에서 작동 됩니다.
+  가로모드 모바일 디바이스 (가로 해상도가 576px 보다 큰 화면에 적용) */
+
+
+
+#mainDiv{
+
+border: 1px solid black;
+height: 600px;
+
+}
+
+#formDiv{
+
+border: 1px solid black;
+width: 80%;
+margin: auto;
+height: 100%;
+position: relative;
+}
+
+#loginDiv{
+
+border: 1px solid black;
+position: absolute;
+top: 50%;
+
+
+}
+
+
+
+
+
+#test{
+
+  width: 100px;
+  height: 100px;
+  background-color: black;
+}
+
+#btn{
+  position: relative;
+  left: 50px;
+  top: 30px;
+  width: 30px;
+  height: 30px;
+  background: transparent;
+  text-align: center;
+  outline: 0;
+  border: 0;
+
+
+  /* padding-left: 3px;
+    padding-right: 3px; */
+
+
+    z-index: 100;
+
+
+ 
+}
+
+span#bar.xxx::after{
+  transform: rotate(45deg);
+  transition: 0.5s all ease;
+  bottom: 0;
+}
+
+span#bar.xxx::before{
+  transform: rotate(315deg);
+  transition: 0.5s all ease;
+  top: 0;
+}
+
+span#bar.xxx{
+  background-color: transparent;
+} 
+
+
+
+
+span#bar.ooo{
+  /* background-color: gray; */
+}
+
+span#bar.ooo::after{
+  transform: rotate(180deg);
+  transition: 0.5s all ease;
+  bottom: -5px;
+}
+
+span#bar.ooo::before{
+  transform: rotate(180deg);
+  transition: 0.5s all ease;
+  top: -5px;
+}
+
+
+#btn:hover > #bar{
+  width: 22px;
+  transition: all 0.3s ease-in-out;
+  
+}
+
+
+#bar{
+  position: absolute;
+  width: 16px;
+  height: 2px;
+  background-color: gray;
+  display: block;
+
+  right: 3px; 
+  
+
+  transition: all 0.3s ease-in-out;
+
+}
+
+
+
+ #bar::after{
+  position: absolute;
+  content: ' ';
+  width: 22px;
+  height: 2px;
+  background-color: gray;
+  display: block;
+  bottom: -5px;
+
+  right: 0; 
+  
+}
+
+#bar::before{
+  position: absolute;
+  width: 22px;
+  height: 2px;
+  background-color: gray;
+  content: ' ';
+  top:-5px;
+  display: block;
+
+  right: 0;
+
+} 
+
+
+
+#test2{
+  width: 200px;
+  height: 200px;
+  background-color: black;
+  position: absolute;
+  top: -200px;
+  left: 0px;
+}
+
+#test2 > p{
+  position: absolute;
+  bottom: 0;
+  color: red;
+
+}
+
+/* #test4{
+  position: absolute;
+  top: 300px;
+  left: 30px;
+  border: 1px solid red;
+}
+
+#test4 h2{
+  display: inline-block;
+} */
+
+#skip1, #skip2{
+  position: absolute;
+}
+
+#skip1{
+  top: 300px;
+  /* left: 100px; */
+  left: 150px;
+}
+
+#skip2{
+  top: 300px;
+  /* left: 180px; */
+  left: 150px;
+
+  opacity: 0;
+}
+
+#test5{
+  border: 1px soild red;
+  width: 100px;
+  height: 100px;
+}
+
+
+#test5:hover > #skip1{
+  color: red;
+  left: 100px;
+}
+
+#test5:hover > #skip2{
+  color: red;
+
+  left: 180px; 
+  opacity: 1;
+}
+
+#bt{
+  text-align: center;
+  position: relative;
+  border: 1px solid red;
+  
+}
+
+#test6{
+
+  /* position: absolute; */
+  display: inline-block;
+  border: 1px solid black;
+
+}
+
+#s1, #s2{
+  margin: 0;
+  display: inline-block;
+}
+
+#s2{
+  opacity:0;
+}
+
+/* #test6:hover{
+  color: red;
+  cursor: pointer;
+} */
+
+
+
+/* #test7{
+  border: 1px solid black;
+  display: inline-block;
+} */
+
+#t1, #t2{
+  position: absolute;
+  left: 50%;
+  bottom: 30px;
+  text-shadow: 5px 5px 10px rgba(0,0,0,0.8);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+#t1:hover{
+  transform: translate(-30%);
+}
+
+#t1:hover > #t2{
+  transform: translate(120%);
+  visibility: visible;
+  opacity: 1;
+}
+
+#t2{
+  /* border: 1px solid red; */
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    position: absolute;
+    right: 0; 
+    top: 2px; 
+}
+
+
+
+
+
+
+/* 가로 해상도가 576px 보다 큰 화면에 적용 */
+@media screen and (min-width: 576px) {
+      
+}
+
+/* 가로 해상도가 768px 보다 큰 화면에 적용 */
+@media screen and (min-width: 768px) {
+    
+}
+
+/* 가로 해상도가 992px 보다 큰 화면에 적용 */
+@media screen and (min-width: 992px) {
+
+}
+/* 가로 해상도가 1200px 보다 큰 화면에 적용 */
+@media screen and (min-width: 1225px) {
+    
+}

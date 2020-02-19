@@ -23,7 +23,9 @@ $(function(){
 		// $('html').animate({scrollTop : offset.top}, 1000);
 		
 		$("#mainDiv").stop().animate({bottom:"100%"},1000)
-		$("#mainDiv2").stop().animate({top:"0"},1000)
+		$("#mainDiv2").stop().animate({top:"0"},1000,function(){
+			$('#div2_1').stop().delay(300).animate({right:"0"},500);
+		})
 
 
 	})
@@ -31,6 +33,18 @@ $(function(){
 	$("#t3").click(function(){
 		$("#mainDiv").stop().animate({bottom:"0"},1000)
 		$("#mainDiv2").stop().animate({top:"100%"},1000)
+	})
+
+	$("#div2_1").click(function(){
+		$("#div2_1").stop().animate({right:"-30%"},500,function(){
+			$("#div2_2").stop().delay(300).animate({right:"0"},500)
+		})
+	})
+
+	$("#div2_2").click(function(){
+		$("#div2_2").stop().animate({right:"-30%"},500,function(){
+			$("#div2_1").stop().delay(300).animate({right:"0"},500)
+		})
 	})
 
        

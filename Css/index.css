@@ -8,36 +8,43 @@ body, html, #contentBox{
 }
 
 #contentBox{
-  display: inline;
+   display: inline;
 }
 
-#mainDiv{
+
+/* 메인 동영상 화면 */
+#mainDiv1{
   width: 100%;
   height: 100%;
+  position: absolute;
+  background-color: #d0c6bc;
 }
 
-#t1, #t2{
+#skipBtn1, #skipBtn2{
+  font-family: 'Anton', sans-serif;
   position: absolute;
+  font-size: 40px;
   left: 50%;
   bottom: 30px;
-  text-shadow: 5px 5px 10px rgba(0,0,0,0.8);
+  text-shadow: 5px 5px 10px #d1ebd9;
   transition: 0.5s;
   cursor: pointer;
   transform: translate(-50%);
 }
 
-#t1:hover{
+#skipBtn1:hover{
   transform: translate(-80%);
+  color: #70ad92;
 }
 
-#t1:hover > #t2{
+#skipBtn1:hover > #skipBtn2{
   transform: translate(100%);
   visibility: visible;
   opacity: 1;
+  color: #70ad92;
 }
 
-#t2{
-  /* border: 1px solid red; */
+#skipBtn2{
     visibility: hidden;
     opacity: 0;
     transition: 0.5s;
@@ -45,36 +52,81 @@ body, html, #contentBox{
     right: 0; 
     top: 2px; 
 }
+/* //메인 동영상 화면 */
 
-#mainDiv{
-  position: absolute;
-}
+
 
 #mainDiv2{
   top: 100%;
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: red;
+
+  background-image: url('../img/mainImage.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-#div2_1{
+#upBtn{
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  cursor: pointer;
+  z-index: 100;
+  
+}
+
+.fa-arrow-up{
+  font-size: 50px;
+  color: #70ad92;
+  transition: 0.5s;
+
+}
+.fa-arrow-up:hover{
+  transform: translateY(-30%)
+}
+
+
+
+#loginDiv{
   position: absolute;
   height: 100%;
   width: 30%;
-  background-color: blue;
+  background-color: #d0c6bc;
+  right: -30%;
+  z-index: 100;
+
+  text-align: center;
+}
+
+#title{
+  font-family: 'Pacifico', cursive;
+  margin-top: 10%;
+}
+
+#joinDiv{
+  position: absolute;
+  height: 100%;
+  width: 30%;
+  background-color: #39313b;
   right: -30%;
   z-index: 100;
 }
 
-#div2_2{
+#findDiv{
   position: absolute;
   height: 100%;
   width: 30%;
-  background-color: green;
+  background-color: #6b635d;
   right: -30%;
   z-index: 100;
 }
+
+
+.loginForm table{
+  margin: 0 auto;
+}
+
 
 
 

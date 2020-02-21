@@ -26,6 +26,8 @@
     <script src="./Js/jquery.mousewheel.min.js"></script><!--마우스휠js -->
     <script src="./Js/index.js"></script>
     <link rel="stylesheet" href="./Css/index.css">
+    <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
 
     <!-- // 담당자 JS, CSS -->
 </head>
@@ -47,23 +49,50 @@
     <div id="contentBox">
         <!-- 담당자 내용 -->
 
-        
-        <div id = "mainDiv">
+        <!-- 메인 동영상 -->
+        <div id = "mainDiv1">
             <video id="video" width="100%" height="100%" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0">
-                <source src="./img/Hello World.mp4">
+                <source src="./img/mainAction.mp4">
             </video>
-            <h2 id = "t1">skip
-                <span id = t2>→</span>
+            <h2 id = "skipBtn1">Skip
+                <span id = "skipBtn2">→</span>
             </h2>
         </div>
+        <!-- //메인 동영상 -->
 
+        <!-- 로그인화면 -->
         <div id = "mainDiv2">
+            <!-- <img id = "mainImg" src="./img/mainImage.jpg" alt=""> -->
             <!-- test
             <p id = "t3">올라가기</p> -->
-            <div id ="div2_1">로그인창에서 > 회원가입</div>
-            <div id ="div2_2">회원가입 > 로그인</div>
-        </div>
+            <div id ="loginDiv">
+                <h1 ID = "title">MINTCHOCO</h1>
 
+                <form action = "login.do" method="POST" name = "loginForm" class = "loginForm">
+
+                    <table>
+                        <tr>
+                            <td><label for = "id">ID</label></td>
+                            <td><input type = "text" id = "id" name = "id" placeholder="ID"/></td>
+                        </tr>
+                        <tr>
+                            <td><label for = "pwd">PASSWORD</label></td>
+                            <td><input type = "password" id = "pwd" name = "pwd" placeholder="****"/></td>
+                        </tr>
+                    </table>
+
+                </form>
+
+
+            </div>
+            <div id ="joinDiv">회원가입 > 로그인</div>
+            <div id = "findDiv">비밀번호 찾기</div>
+
+            <!-- <div id = "upBtn"><i class="fas fa-arrow-up"></i></div> -->
+            <div id = "upBtn"><i class="fas fa-arrow-up"></i></div>
+
+        </div>
+        <!-- //로그인화면 -->
 
 
         <!-- // 담당자 내용 -->

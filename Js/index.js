@@ -2,7 +2,7 @@
 
 $(function(){
 
-	var test = 
+
 
 	// 메인 skip 버튼
 	$("#skipBtn1").click(function(){

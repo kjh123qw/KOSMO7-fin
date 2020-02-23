@@ -3,6 +3,33 @@
 $(function(){
 
 
+	/* 작성자 : 김정호 (읽은 후 삭제해도 됨 ㅎㅎ)
+	
+	var checkWidth;							// 전역변수로 가로 폭 체크를 위한 변수 선언
+
+    $(window).resize(function(event){		// 가로 사이즈가 바뀔 때마다 호출됨
+        checkWidth = $( window ).width();	// 전역 변수에 현재 가로 사이즈를 대입
+    })
+	
+	가로 폭 사이즈가 바뀔 때마다 checkWidth에 대입 되기 때문에
+	이 후 가로 폭에 따라 기능이 바뀌는 곳에서
+	checkWidth를 가져와서 사용하면 됨
+	
+	----- 예시 -----
+	if(checkWidth < 576){  // 가로폭을 576 이하로 줄이면 작동
+		$("#mainDiv1").stop().animate({bottom:"100%"},1000)
+		$("#mainDiv2").stop().animate({top:"0"},1000,)
+
+		$("#loginDiv").css('z-index', 200);
+		$("#joinDiv").css('z-index', 100);
+		$("#findDiv").css('z-index', 100);
+	}
+
+	*/
+
+
+
+	var test = 
 
 	// 메인 skip 버튼
 	$("#skipBtn1").click(function(){

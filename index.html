@@ -70,7 +70,7 @@
 
                 <form action = "login.do" method="POST" name = "loginForm" class = "loginForm">
 
-                    <table>
+                    <!-- <table>
                         <tr>
                             <td><label for = "id">ID</label></td>
                             <td><input type = "text" id = "id" name = "id" placeholder="ID"/></td>
@@ -79,14 +79,19 @@
                             <td><label for = "pwd">PASSWORD</label></td>
                             <td><input type = "password" id = "pwd" name = "pwd" placeholder="****"/></td>
                         </tr>
-                    </table>
+                    </table> -->
+
+                    <input type = "text" id = "id" name = "id" placeholder="ID"/>
+                    <input type = "password" id = "pwd" name = "pwd" placeholder="PASSWORD"/>
 
                 </form>
-
+                <button id = "joinBtn">join</button>
+                <button id = "findBtn">find</button>
+                
 
             </div>
-            <div id ="joinDiv">회원가입 > 로그인</div>
-            <div id = "findDiv">비밀번호 찾기</div>
+            <div id ="joinDiv"><button class = "goLogin">회원가입 완료</button></div>
+            <div id = "findDiv"><button class = "goLogin">비전 찾기 완료</button></div>
 
             <!-- <div id = "upBtn"><i class="fas fa-arrow-up"></i></div> -->
             <div id = "upBtn"><i class="fas fa-arrow-up"></i></div>

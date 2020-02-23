@@ -2,6 +2,22 @@
   기본으로 작성되는 CSS는 576px보다 작은 화면에서 작동 됩니다.
   가로모드 모바일 디바이스 (가로 해상도가 576px 보다 큰 화면에 적용) */
 
+  /* 320
+  576
+  768
+  992
+  1200 */
+
+  /* 
+  #d0c6bc
+  #6b6350
+  #39313b
+  #70ad92
+  #aadac5
+  #d1ebd9 
+  */
+
+
 body, html, #contentBox{
   height: 100%;
   overflow: hidden;
@@ -26,23 +42,24 @@ body, html, #contentBox{
   font-size: 40px;
   left: 50%;
   bottom: 30px;
-  text-shadow: 5px 5px 10px #d1ebd9;
+  color: #39313b;
+  /* text-shadow: 5px 5px 10px #d1ebd9; */
   transition: 0.5s;
   cursor: pointer;
   transform: translate(-50%);
 }
 
-#skipBtn1:hover{
+/* #skipBtn1:hover{
   transform: translate(-80%);
   color: #70ad92;
-}
+} */
 
-#skipBtn1:hover > #skipBtn2{
+/* #skipBtn1:hover > #skipBtn2{
   transform: translate(100%);
   visibility: visible;
   opacity: 1;
   color: #70ad92;
-}
+} */
 
 #skipBtn2{
     visibility: hidden;
@@ -52,6 +69,7 @@ body, html, #contentBox{
     right: 0; 
     top: 2px; 
 }
+
 /* //메인 동영상 화면 */
 
 
@@ -72,13 +90,14 @@ body, html, #contentBox{
   bottom: 20px;
   left: 20px;
   cursor: pointer;
-  z-index: 100;
+  z-index: 500;
   
 }
 
 .fa-arrow-up{
   font-size: 50px;
-  color: #70ad92;
+  /* color: #39313b; */
+  color: red;
   transition: 0.5s;
 
 }
@@ -91,15 +110,15 @@ body, html, #contentBox{
 #loginDiv{
   position: absolute;
   height: 100%;
-  width: 30%;
+  width: 100%;
   background-color: #d0c6bc;
-  right: -30%;
-  z-index: 100;
-
+  /* right: -30%; */
+  /* z-index: 100; */
   text-align: center;
 }
 
 #title{
+  color: #39313b;
   font-family: 'Pacifico', cursive;
   margin-top: 10%;
 }
@@ -107,25 +126,26 @@ body, html, #contentBox{
 #joinDiv{
   position: absolute;
   height: 100%;
-  width: 30%;
+  width: 100%;
   background-color: #39313b;
-  right: -30%;
-  z-index: 100;
+  /* right: -100%; */
+  /* z-index: 100; */
 }
 
 #findDiv{
   position: absolute;
   height: 100%;
-  width: 30%;
+  width: 100%;
   background-color: #6b635d;
-  right: -30%;
-  z-index: 100;
+  /* right: -100%; */
+  /* z-index: 100; */
 }
 
 
 .loginForm table{
   margin: 0 auto;
 }
+
 
 
 
@@ -138,14 +158,35 @@ body, html, #contentBox{
 
 /* 가로 해상도가 768px 보다 큰 화면에 적용 */
 @media screen and (min-width: 768px) {
+
+#loginDiv, #joinDiv, #findDiv{
+  position: absolute;
+  height: 100%;
+  width: 40%;
+  right: -40%;
+}
     
 }
 
 /* 가로 해상도가 992px 보다 큰 화면에 적용 */
 @media screen and (min-width: 992px) {
 
+  #loginDiv, #joinDiv, #findDiv{
+    position: absolute;
+    height: 100%;
+    width: 40%;
+    right: -40%;
+  }
+
 }
 /* 가로 해상도가 1200px 보다 큰 화면에 적용 */
 @media screen and (min-width: 1225px) {
-    
+
+  #loginDiv, #joinDiv, #findDiv{
+    position: absolute;
+    height: 100%;
+    width: 40%;
+    right: -40%;
+  }
+  
 }
